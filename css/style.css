@@ -128,7 +128,6 @@ h2 {
     margin-top: 4.25rem;
 }
 
-
 footer {
     position: fixed;
     bottom: 0;
@@ -138,8 +137,13 @@ footer {
     font-family: "Roboto Mono", monospace;
     font-size: 1.25rem;
     padding: 1.5rem;
+}
+
+a {
+    text-decoration: none;
     color: var(--primary-color);
 }
+
 
 @media (max-width: 1360px) {
     main {
@@ -162,6 +166,7 @@ footer {
 
     .container__output__box {
         box-shadow: 0 4px 30px var(--border-color);
+        min-height: 25rem;
     }
 }
 
@@ -197,7 +202,7 @@ footer {
     }
     
     .container__output__box {
-        height: 17.5em;
+        min-height: 17.5em;
         padding: 1rem;
     }
     
