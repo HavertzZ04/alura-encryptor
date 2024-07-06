@@ -42,3 +42,6 @@ The page should have fields for:
 4. **Copy the result**: Use the copy button to copy the result to your clipboard.
 
 Feel free to contribute to this project or report any issues you encounter.
+
+
+![View of the Application](images/view.png)
