@@ -51,7 +51,7 @@ textarea {
     resize: none;
     outline: none;
     border: none;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-family: "Roboto Mono", monospace;
     background-color: var(--primary-color);
 }
@@ -115,7 +115,7 @@ textarea {
 }
 
 .container__output__box > p {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
 }
 
 h2 {
@@ -141,34 +141,84 @@ footer {
     color: var(--primary-color);
 }
 
-
-@media (max-width: 640px) {
-
-
+@media (max-width: 1360px) {
     main {
         flex-direction: column;
-        gap: 2rem;
+        gap: 4rem;
     }
 
     .container__input {
         padding-right: 0;
     }
 
-    .container__output__box, textarea {
-        height: 12rem;
+    #copy {
+        margin-top: 3rem;
+    }
+
+    footer {
+        margin-top: 0;
+        position: relative;
     }
 
     .container__output__box {
         box-shadow: 0 4px 30px var(--border-color);
     }
+}
 
+
+@media (max-width: 558px) {
+    header {
+        text-align: left;
+        padding: 2rem 2rem 0 2rem;
+    }
+    
+    h1 {
+        font-size: 3rem;
+    }
+    
+    main {
+        padding: 2rem;
+        gap: 2rem;
+    }
+    
+    textarea {
+        height: 17.5rem;
+        padding: 1rem;
+        font-size: 1.25rem;
+    }
+    
+    .container__input__buttonsBox {
+        gap: 2rem;
+    }
+    
+    .container__input__buttonsBox__button, #copy {
+        font-size: 1.25rem;
+        border-radius: 0.4rem;
+    }
+    
+    .container__output__box {
+        height: 17.5em;
+        padding: 1rem;
+    }
+    
+    .container__output__box > p {
+        font-size: 1.25rem;
+    }
+    
+    h2 {
+        margin-bottom: 1rem;
+        font-size: 2.5rem;
+    }
+    
     #copy {
-        margin-top: 2rem;
+        width: 100%;
+        margin-top: 2.25rem;
     }
     
     footer {
-        margin-top: 0;
-        position: relative;
+        padding: 1rem;
+        font-size: 1rem;
+        margin-top: 1.5rem;
     }
 }
 
