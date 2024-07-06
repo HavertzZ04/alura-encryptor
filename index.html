@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Encryptor</title>
+</head>
+<body>
+    <header>
+        <h1>Encryptor</h1>
+    </header>
+    <main>
+        <section class="container__input">
+            <textarea type="text" placeholder="Enter your text here :)" required></textarea>
+            <p id="info-text">⚠️ Only lowercase letters without special characters or numbers.</p>
+            <div class="container__input__buttonsBox">
+                <button class="container__input__buttonsBox__button" onclick="normalToEncript()">Encrypt</button>
+                <button class="container__input__buttonsBox__button" onclick="encriptToNormal()">Decrypt</button>
+            </div>
+        </section>
+        <section class="container__output">
+            <div class="container__output__box">
+                <p id="blank-message"></p>
+                <h2>No message was found</h2>
+                <p id="no-message">Enter the text you want to encrypt or decrypt.</p>
+            </div>
+            <button id="copy" onclick="copyText()" disabled>Copy</button>
+        </section>
+    </main>
+    <footer>Created by HavertzZ</footer>
+    <script src="./js/app.js"></script>
+</body>
+</html>
+
+

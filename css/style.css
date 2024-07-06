@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --primary-color: #e5f5f2;
+    --glass-color: rgba(0, 0, 0, 0.244);
+    --shadow-color: rgba(255, 255, 255, 0.062);
+    --border-color: rgba(64, 64, 64, 0.053);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%231b071b'/%3E%3Cstop offset='1' stop-color='%231b071b' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23003d4c'/%3E%3Cstop offset='1' stop-color='%23003d4c' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23140b63'/%3E%3Cstop offset='1' stop-color='%23140b63' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23000000'/%3E%3Cstop offset='1' stop-color='%23000000' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23360E36'/%3E%3Cstop offset='1' stop-color='%23360E36' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23007A98'/%3E%3Cstop offset='1' stop-color='%23007A98' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    text-align: left;
+    padding: 2rem 2rem 0 2rem;
+    color: var(--primary-color);
+}
+
+main {
+    display: flex;
+    padding: 2rem;
+}
+
+.container__input {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    padding-right: 2rem;
+}
+
+textarea {
+    width: 100%;
+    height: 13rem;
+    padding: 1rem;
+    border-radius: 0.2rem;
+    resize: none;
+    outline: none;
+    border: none;
+    font-size: 0.9rem;
+    font-family: "Roboto Mono", monospace;
+    background-color: var(--primary-color);
+}
+
+#info-text {
+    font-size: 0.6rem;
+    padding: 0.8rem 0 0.6rem;
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.container__input__buttonsBox {
+    display: flex;
+    gap: 2rem;
+    padding-top: 0.25rem;
+}
+
+.container__input__buttonsBox__button, #copy {
+    width: 50%;
+    font-size: 1rem;
+    padding: 0.25rem;
+    border: none;
+    outline: none;
+    border-radius: 0.2rem;
+    background-color: var(--primary-color);
+    font-family: "Roboto Mono", monospace;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.container__input__buttonsBox__button:hover, #copy:hover {
+    background: var(--glass-color);
+    box-shadow: 0 4px 30px var(--shadow-color);
+    backdrop-filter: blur(2.2px);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.container__output {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.container__output__box {
+    width: 100%;
+    height: 13rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 0.2rem;
+    background: var(--glass-color);
+    box-shadow: 0 4px 30px var(--shadow-color);
+    backdrop-filter: blur(2.2px);
+    border: 1px solid var(--border-color);
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+#copy {
+    width: 100%;
+    margin-top: 2.45rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--glass-color);
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+    font-size: 0.65rem;
+    padding: 0.5rem;
+    color: var(--primary-color);
+}
+
+
+@media (max-width: 640px) {
+
+
+    main {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .container__input {
+        padding-right: 0;
+    }
+
+    .container__output__box, textarea {
+        height: 9rem;
+    }
+
+    .container__input__buttonsBox__button, #copy  {
+        padding: 0.10;
+        font-size: 0.75rem;
+    }
+
+    .container__output__box {
+        box-shadow: 0 4px 30px var(--border-color);
+    }
+
+    #copy {
+        margin-top: 2rem;
+    }
+
+    footer {
+        position: relative;
+        bottom: 0;
+
+    }
+}
+
